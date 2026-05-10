@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <header id="myHeader" class="navbar navbar-expand-lg navbar-light white-header w-100">
+         <div class="container">
+            <a class="navbar-brand order-xs-2 order-md--2" href="index.html">
+            <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler order-xs-1 order-md--1" onclick="openNav()" type="button">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" navbar-collapse justify-content-end align-items-center" id="navbarScroll">
+               <ul id="mySidenav" class="nav-list list-unstyled sidenav">
+                  <li>
+                     <a href="javascript:void(0)" class="closebtn text-decoration-none" onclick="closeNav()">×</a>
+                  </li>
+                  <li class="nav-item px-4  d-inline-block ">
+                     <a href="games.html" class="nav-link fw-bold font-16">Games</a>
+                  </li>
+                  <li class="nav-item px-4  d-inline-block ">
+                     <a href="workplace.html" class="nav-link fw-bold font-16">Workplace</a>
+                  </li>
+                  <li class="nav-item px-4  d-inline-block ">
+                     <a href="careers.html" class="nav-link fw-bold font-16">Careers</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="wrapper-pd bg-grey">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-12 col-12">
+                  <h2 class="h2" data-aos="fade-up" data-aos-delay="50">
+                     Contact us
+                  </h2>
+                  <p class="mt-lg-5 mt-md-4 mt-sm-3 pt-lg-4 pt-md-3 pt-sm-2 my-4 mb-0" data-aos="fade-up" data-aos-delay="50">
+                     We want to know more about you - tell us about your experience and why you think we’re a good match. Links to your portfolio and/or projects would be extremely useful.
+                  </p>
+               </div>
+            </div>
+            <div class="contact-form mt-lg-5 mt-md-4 mt-sm-3">
+               <h3 class="h3 mb-lg-5 mb-md-4 mb-sm-3" data-aos="fade-up" data-aos-delay="50">
+                  Send us your role
+               </h3>
+               <form method="post">
+               <div class="row">
+                  <div class="col-lg-5 col-md-5 col-12">
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlInput1" class="form-label" >Full name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"  name="name" placeholder="Full name" required>
+                     </div>
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"  name="email" placeholder="Email" required>
+                     </div>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-12"></div>
+                  <div class="col-lg-5 col-md-5 col-12">
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlInput1" class="form-label">Resume / CV</label>
+                        <div class="file-upload">
+                           <input type="file" name="file" id="file-input" class="hidden" required>
+                           <label for="file-input" class="file-label form-control">
+                           <span class="file-text">Choose a file</span>
+                           </label>
+                           <span class="file-clear" id="clear-button">&times;</span>
+                        </div>
+                     </div>
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone" name="phone" required>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlTextarea1" class="form-label">Motivation letter</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message" required></textarea>
+                     </div>
+                     <div class="mb-lg-5 mb-md-4 mb-2" data-aos="fade-up" data-aos-delay="50">
+                        <label for="exampleFormControlTextarea1" class="form-label">Links to your portfolio</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="portfolio" required></textarea>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12" data-aos="fade-up" data-aos-delay="50">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                        By selecting Send your application, I agree to the 
+                        <a href="">Terms</a> and confirm that I have read 
+                        <a href=""> Privacy Policy. </a>
+                        </label>
+                     </div>
+                     <button type="submit" class="btn primary-btn mx-auto d-block w-25" data-aos="fade-up" data-aos-delay="50">Send your application</button>
+                  </div>
+               </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <footer class="wrapper-pd pb-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-12">
+                  <a href="index.html">
+                  <img src="images/logo.png" alt="" width="200">
+                  </a> <br>
+                  <ul class="mt-4">
+                     <li><a href="" class="fw-bold font-12 line-height-20 text-grey">Privacy Policy</a></li>
+                     <li> <a href="" class="fw-bold font-12 line-height-20 text-grey">Terms & Conditions</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 col-md-6 col-12">
+                  <ul class="social-icons">
+                     <li>
+                        <a href="">
+                        <i class="fa fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <i class="fa fa-instagram"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <i class="fa fa-linkedin"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <i class="fa fa-youtube"></i>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="mt-lg-5 mt-md-3 mt-sm-2 mt-1">
+                     <img src="images/logo.png" alt="" width="100"> 
+                     <img src="images/logo.png" alt="" width="100"> 
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-lg-4 mt-md-3 mt-sm-2 mt-1">
+               <div class="col-lg-6 col-md-6 col-12">
+                  <p class="font-12 line-height-20 fw-bold text-grey mt-3">© 2022 Dummy LLC</p>
+               </div>
+               <div class="col-lg-6 col-md-6 col-12">
+                  <div>
+                     <a href="mailto:contact@example.com" class="fw-bold font-12 line-height-20 text-grey">contact@example.com</a>
+                     <a href="mailto:contact@example.com" class="fw-bold font-12 line-height-20 text-grey ms-lg-3 ms-md-2 ms-sm-2 ms-2">contact@example.com</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
